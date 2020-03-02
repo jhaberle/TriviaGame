@@ -1,8 +1,10 @@
 
 
-// // questions that will be displayed throughout the game
+// Tally for right and wrong answers
 var correct = 0;
 var incorrect = 0;
+
+// // questions that will be displayed throughout the game
 var question0 = ["Kramer has a devious friend that lives down the hallway that loathes Jerry.  What is that friend's name?"];
 
 var answers0 = ["Lomez", "Newman", "Jay Remenschnieder", "David Puddy"];
@@ -68,14 +70,25 @@ function quest1(){
     $("#option2").html(answers1[2]);
     $("#option3").html(answers1[3]);
     $("#question-header").html("Let's see if you can guess the answer!");
-    if(i === answers1[3]) {
+    $("#option3").click(function() {
+        if ($(answers1) === [3]);
         alert("Keith Hernandez is right!  Look at that stache!");
         correct++;
-    } else {
-        alert("uh oh, wrong answer");
+    } 
+   
+    $("#option0", "#option1", "#option2").click(function() {
+        alert("That's a shame.");
         incorrect++;
     }
 }
+    // if(i === 3) {
+    //     alert("Keith Hernandez is right!  Look at that stache!");
+    //     correct++;
+    // } else {
+    //     alert("uh oh, wrong answer");
+    //     incorrect++;
+    // }
+
 
 
 // function quest2(){
@@ -148,4 +161,3 @@ function quest1(){
 //     $("#option2").html(answers9[2]);
 //     $("#option3").html(answers9[3]);
 //     console.log(question);
-// }
