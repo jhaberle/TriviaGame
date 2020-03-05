@@ -40,7 +40,7 @@ var gifArray = ['question1', 'question2', 'question3', 'question4', 'question5',
 var currentQuestion; var correctAnswer; var incorrectAnswer; var unanswered; var seconds; var time; var answered; var userSelect;
 var messages = {
 	correct: "Giddyup!",
-	incorrect: "Sorry Newman",
+	incorrect: "Step your game up!",
 	endTime: "Out of time!",
 	finished: "Let's check your score!"
 }
@@ -117,7 +117,7 @@ function answerPage(){
 
 	var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
 	var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
-	$('#gif').html('<img src = "assets/images/'+ gifArray[currentQuestion] +'.gif" width = "400px">');
+	
 	//checks to see correct, incorrect, or unanswered
 	if((userSelect == rightAnswerIndex) && (answered == true)){
 		correctAnswer++;
